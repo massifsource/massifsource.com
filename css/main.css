@@ -1,0 +1,254 @@
+/*Specification*/
+
+@font-face {
+  font-family: 'Impact';
+  url('../fonts/Impact.ttf') format('truetype'), font-weight: 100;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Impact', sans-serif !important;
+  padding: 0;
+  margin:0;
+  font-weight: 400;
+  height: 100%;
+  width: 100%;
+}
+div, span, button, a, form, input {
+  box-sizing: border-box;
+}
+ul, li { 
+  display: block;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+/*------*/
+
+/*Header*/
+
+.header {
+  background: url('../img/background.png') no-repeat center center / cover;
+  padding-bottom: 440px;
+  color: #ffffff;
+  position: relative;
+  z-index: 6;
+}
+
+
+.menu {
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+.menu__item a {
+  color: #f9f7ec;
+  font-weight: 300;
+  font-size: 23px;
+  text-align: center;
+
+}
+
+
+.offer__title {
+  max-width: 664px;
+  font-size: 90px;
+  text-align: center;
+  margin: 200px auto 0;
+  transform: scaleY(2);
+  letter-spacing: 0.05em;
+
+}
+.offer__title-2 {
+  display: block;
+  margin:0  auto;
+  font-size: 32px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.color_blue {
+  color: #839ebd;
+}
+
+/*------*/
+
+/*main__info*/
+
+.main__info {
+  background: url('../img/background3.png') no-repeat center center / cover;
+  /*z-index: -1;*/
+  /*position: relative;*/
+  margin-top: -200px;
+  padding: 300px 0 180px;
+
+}
+
+.cite {
+  font-size: 20px;
+  text-align: justify;
+}
+
+.fa-quote-left {
+  margin-top: -10px;
+}
+
+.main__title {
+  font-size: 28px;
+  color: #839ebd;
+  text-transform: uppercase;
+  margin-top: 60px;
+}
+
+
+.photo__dev {
+  width: 250px;
+
+  margin-top: 30px;
+}
+.name__dev {
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.descr__dev {
+  text-align: justify;
+  width: 350px;
+  margin: 10px auto;
+  font-family: "Times New Roman", sans-serif;
+}
+
+.btn-dark {
+  width: 200px;
+  padding: 10px;
+}
+/*-------*/
+
+/*ihover*/
+
+.ch-item {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: relative;
+  cursor: default;
+  box-shadow:
+          inset 0 0 0 0  rgba(131,158,189, 0.6),
+          inset 0 0 0 10px rgba(255,255,255,0.6),
+          0 1px 2px rgba(0,0,0,0.1);
+
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.ch-img-1 {
+  background-image: url('../img/nick2.png');
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+
+}
+.ch-img-2 {
+  background-image: url('../img/kate3.png');
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+
+}
+
+.ch-info {
+  position: absolute;
+  width: 200px;
+  height:200px;
+  border-radius: 50%;
+  opacity: 0;
+
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+
+  -webkit-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  -o-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+  -webkit-backface-visibility: hidden; /*for a smooth font */
+
+}
+
+.ihover__title {
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  letter-spacing: 2px;
+  font-size: 15px;
+  margin: 0 30px;
+  padding: 65px 0 0 0;
+  height: 110px;
+  font-family: 'Open Sans', Arial, sans-serif;
+  text-shadow:
+          0 0 1px #fff,
+          0 1px 2px rgba(0,0,0,0.3);
+}
+
+.ihover__text{
+  color: #fff;
+  padding: 10px 5px;
+  font-style: italic;
+  margin: 0 30px;
+  font-size: 12px;
+  border-top: 1px solid rgba(255,255,255,0.5);
+}
+
+.ihover__text, .ihover__link {
+  display: block;
+  color: #fff;
+  color: rgba(255,255,255,0.7);
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 9px;
+  letter-spacing: 1px;
+  padding-top: 4px;
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.ihover__text, .ihover__link:hover {
+  color: #fff222;
+  color: rgba(255,242,34, 0.8);
+}
+
+.ch-item:hover {
+  box-shadow:
+          inset 0 0 0 110px rgba(131,158,189, 0.4),
+          inset 0 0 0 10px rgba(131,158,189, 0.4),
+          0 1px 2px rgba(0,0,0,0.1);
+}
+
+.ch-item:hover .ch-info {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+.btn-dark {
+  margin-top: 30px;
+}
+/*-----*/
+
+/*footer*/
+
+.footer {
+  background: url('../img/background2.png') no-repeat center center / cover;
+  z-index: 4;
+  padding: 180px !important;
+  margin-top: -190px !important;
+  position: relative;
+}
+
